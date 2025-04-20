@@ -1,12 +1,12 @@
 #ifndef FIGURE_H
 #define FIGURE_H
-#define EPS 0.000001
 
 #include <string>
 #include "point.h"
 #include <iostream>
 
 using namespace std;
+constexpr double EPS = 1e-6;
 
 class Figure {
 protected:
