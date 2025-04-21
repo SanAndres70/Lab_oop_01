@@ -15,13 +15,13 @@ string Triangle::getName() const {
 }
 
 string Triangle::getDescription() const {
-    return "Треугольник с вершинами (" + to_string(a.x) + ", " + to_string(a.y) + "), (" +
-           to_string(b.x) + ", " + to_string(b.y) + "), (" +
-           to_string(c.x) + ", " + to_string(c.y) + ")";
+    return "Треугольник с вершинами (" + to_string(a.get_x()) + ", " + to_string(a.get_y()) + "), (" +
+           to_string(b.get_x()) + ", " + to_string(b.get_y()) + "), (" +
+           to_string(c.get_x()) + ", " + to_string(c.get_y()) + ")";
 }
 
 double Triangle::getArea() const {
-    return abs((a.x * (b.y - c.y) +
-                     b.x * (c.y - a.y) +
-                     c.x * (a.y - b.y)) / 2.0);
+    return abs((a.get_x() * (b.get_y() - c.get_y()) +
+                     b.get_x() * (c.get_y() - a.get_y()) +
+                     c.get_x() * (a.get_y() - b.get_y())) / 2.0);
 }
