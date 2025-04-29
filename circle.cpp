@@ -14,8 +14,8 @@ string Circle::getName() const {
 }
 
 string Circle::getDescription() const {
-    return "Круг с центром (" + to_string(center.x) + ", " +
-           to_string(center.y) + ") и радиусом " + to_string(radius);
+    return "Круг с центром (" + to_string(center.get_x()) + ", " +
+           to_string(center.get_y()) + ") и радиусом " + to_string(radius);
 }
 
 double Circle::getArea() const {
